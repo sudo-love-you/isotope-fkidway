@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isotope-fkidway</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <div class="wraps">
+      <h1>Isotope - combination filters</h1>
+
+      <div class="filters">
+        <div class="ui-group">
+          <h3>class</h3>
+          <div
+            class="button-group js-radio-button-group"
+            data-filter-group="class"
+          >
+            <button class="button is-checked" data-filter="">any</button>
+            <button class="button" data-filter=".econom">econom</button>
+            <button class="button" data-filter=".biznes">biznes</button>
+          </div>
+        </div>
+
+        <div class="ui-group">
+          <h3>marka</h3>
+          <div
+            class="button-group js-radio-button-group"
+            data-filter-group="marka"
+          >
+            <button class="button is-checked" data-filter="">any</button>
+            <button class="button" data-filter=".audi">audi</button>
+            <button class="button" data-filter=".bmw">bmw</button>
+            <button class="button" data-filter=".mercedes">mercedes</button>
+          </div>
+        </div>
+
+        <div class="ui-group">
+          <h3>korobka</h3>
+          <div
+            class="button-group js-radio-button-group"
+            data-filter-group="korobka"
+          >
+            <button class="button is-checked" data-filter="">any</button>
+            <button class="button" data-filter=".avtomat">avtomat</button>
+            <button class="button" data-filter=".rucinaia">rucinaia</button>
+          </div>
+        </div>
+
+        <div class="ui-group">
+          <h3>cinditioner</h3>
+          <div
+            class="button-group js-radio-button-group"
+            data-filter-group="cinditioner"
+          >
+            <button class="button is-checked" data-filter="">any</button>
+            <button class="button" data-filter=".esti">esti</button>
+            <button class="button" data-filter=".net">net</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="color-shape biznes audi avtomat esti">
+          biznes, audi, avtomat, esti
+        </div>
+        <div class="color-shape biznes mercedes avtomat esti">
+          biznes, mercedes, avtomat, esti
+        </div>
+        <div class="color-shape econom bmw rucinaia net">
+          econom, bmw, rucinaia, net
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
